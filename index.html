@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Num</title>
+    <style>
+        body{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        input[type=button]{
+            
+            background: whitesmoke;
+            color: black;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            border: none;
+            padding: 20px;
+            font-size: 22pt;
+            cursor: pointer;
+            transition: .3s;
+            border-radius: 25px;
+        }
+        input[type=button]:hover{
+
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Color now: #<span id="colorNow">0</span></h1>
+    <h1>Last color: #<span id="lastColor">0</span></h1>
+    <input type="button" value="Generate new color.">
+<script src="./index.js"></script>
+</body>
+</html>
